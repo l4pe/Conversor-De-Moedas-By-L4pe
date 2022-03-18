@@ -1,0 +1,14 @@
+js:
+
+function Converter() {
+	var valorElemento = document.getElementById("valor");
+	var valor = valorElemento.value;
+	var valorEmDollarNumerico = parseFloat(valor);
+	console.log("valor em Dollar: " + valorEmDollarNumerico);
+	var valorEmReal = valorEmDollarNumerico * 5;
+	console.log("valor em Real: " + valorEmReal);
+
+	var elementtoValorConvertido = document.getElementById("valorConvertido");
+	var valorEmmReal = "O valor em Real é R$ " + valorEmReal;
+	elementoValorConvertido.innerHTML = valorEmmReal;
+}
